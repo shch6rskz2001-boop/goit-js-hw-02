@@ -1,8 +1,5 @@
-function checkSpam(str) {
-    // Приводимо весь рядок до нижнього регістру для коректної перевірки
+function checkForSpam(str) {
     const lowerStr = str.toLowerCase();
-  
-    // Перевіряємо наявність заборонених слів
     if (lowerStr.includes('spam') || lowerStr.includes('sale')) {
       return true;
     }
@@ -16,3 +13,4 @@ console.log(checkForSpam("Amazing SalE, only tonight!")); // true
 console.log(checkForSpam("Trust me, this is not a spam message")); // true
 console.log(checkForSpam("Get rid of sPaM emails. Our book in on sale!")); // true
 console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+

@@ -1,11 +1,7 @@
-function formatString(string, maxLength) {
-    // Перевіряємо, чи довжина рядка більша за maxLength
+function formatMessage(string, maxLength) {
     if (string.length > maxLength) {
-      // Обрізаємо рядок до maxLength і додаємо трикрапку
       return string.slice(0, maxLength) + "...";
     }
-  
-    // Якщо рядок не перевищує ліміт, повертаємо його без змін
     return string;
 }
   
